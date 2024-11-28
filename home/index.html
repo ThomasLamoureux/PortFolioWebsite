@@ -4,14 +4,11 @@
         <title>Thomas Lamoureux</title>
 
         <link rel="stylesheet" href="style.css" />
-        <link rel="icon" href="../resources/Logo.png" />
+        <link rel="icon" href="resources/Logo.png" />
 
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="description" content="Testing Website" />
-        <meta name="keywords" content="awesome" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
     </head>
     <body>
         <div id="nav" class="nav_bar">
@@ -21,7 +18,7 @@
                     Thomas Lamoureux
                 </label>
             </div>
-            <div style="display: flex; flex-direction: row-reverse;">
+            <div id="nav_clickers" style="display: flex; flex-direction: row-reverse;">
                 <label>
                     <br />
                     <a href="#contact_info" class="page_linker_00" style="padding-right: 5vw;">Contact</a>
@@ -34,20 +31,16 @@
                     <br />
                     <a href="#about" class="page_linker_00">About</a>
                 </label>
-                <label>
-                    <br />
-                    <a href="#home" class="page_linker_00">Home</a>
-                </label>
             </div>
         </div>
 
-        <header id="about" style="text-align: center; font-size: 80px; padding-bottom: 20px; padding-top: 150px;">
+        <header id="about" style="text-align: center;  padding-bottom: 20px; padding-top: 150px;">
             About Me
         </header>
-        <div class="projects" style="border-top: solid 7px #FFF; padding-top: 10px; padding-bottom: 50px;">
+        <div class="projects" style="border-top: solid 7px #FFF; padding-top: 10px; padding-bottom: 200px;">
             <div style="padding-top: 30px;">
                 <h1>About Me</h1>
-                <p>
+                <p id="about_me" style="width: 100%;">
                     Hey, I'm Thomas, a student at Stetson University studying Computer Science.
                     <br/>
                     <br/>
@@ -70,16 +63,16 @@
                 </p>
                 <label>Other</label>
                 <p>
-                    <img src="https://skillicons.dev/icons?i=discordbots,git,github,mongodb,html,css,windows,linux" />
+                    <img src="https://skillicons.dev/icons?i=discordbots,git,github,mongodb,html,css,windows,linux,&perline=7" />
                 </p>
             </div>
         </div>
-        <header id="projects" style="text-align: center; font-size: 80px; padding-bottom: 20px; padding-top: 250px;">
+        <header id="projects" style="text-align: center;  padding-bottom: 20px; padding-top: 150px;">
             Projects
         </header>
         <div class="projects" style="border-top: solid 7px #FFF; padding-top: 100px; padding-bottom: 100px;">
             <div>
-                <a href="https://www.youtube.com/watch?v=yJrIG43YNDs"><img class="project_image" src="../resources/AtoranMenu.png" alt="Atoran"></a>
+                <a href="https://www.youtube.com/watch?v=yJrIG43YNDs"><img class="project_image" src="resources/AtoranMenu.png" alt="Atoran"></a>
             </div>
             <div>
                 <p class="project_title">
@@ -95,7 +88,7 @@
             </div>
 
             <div>
-                <a href="#about"><img h class="project_image" src="../resources/PortfolioWebsite.png" alt="Website"></a>
+                <a href="#about"><img h class="project_image" src="resources/PortfolioWebsite.png" alt="Website"></a>
             </div>
             <div>
                 <p class="project_title">
@@ -106,12 +99,12 @@
                 </p>
             </div>
         </div>
-        <header id="contact_info" style="text-align: center; font-size: 80px; padding-bottom: 20px; padding-top: 20px;">
+        <header id="contact_info" style="text-align: center;  padding-bottom: 20px; padding-top: 20px;">
             Contact
         </header>
         <div id="Contact" class="contacts" style="border-top: solid 7px #FFF; padding-top: 20px; padding-bottom: 80px;">
             <a href="https://www.linkedin.com/in/t-lamoureux/" class="contact">LinkedIn</a>
-            <a class="contact">lamoureux.thomas@gmail.com</a>
+            <a href="mailto:lamoureux.thomas@gmail.com"class="contact">lamoureux.thomas@gmail.com</a>
         </div>
 
         <script src="script.js"></script>

@@ -6,11 +6,11 @@
 }
 
 body {
-    background: #0b0b1d center/cover fixed url("../resources/WebsiteBackground.png") no-repeat 
+    background: #0b0b1d center/cover fixed url("resources/WebsiteBackground.png") no-repeat 
 }
 
 header {
-    font-size: 35px;
+    font-size: 80px;
     font-family: 'Times New Roman';
 }
 
@@ -66,7 +66,7 @@ p {
 }
 
 .contacts {
-    width: 60%;
+    width: 1050px;
     overflow: hidden;
     border-right: 0px;
     border-left: 0px;
@@ -90,9 +90,6 @@ a:hover {
 }
 
 
-.contact:hover {
-    color: #141457;
-}
 
 .project_description {
     width: 510px;
@@ -107,8 +104,8 @@ a:hover {
 }
 
 .project_image {
+    aspect-ratio: 16/9;
     width: 510px;
-    height: 287px;
     padding: 1px;
     margin: 0;
     border-radius: 25px;
@@ -137,25 +134,63 @@ a:hover {
     justify-self: center;
 }
 
-.column {
-    float: left;
-    width: 50%;
-}
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
   
-@media screen and (max-width: 1050px) {
+@media only screen and (max-width: 1050px) {
     .projects {
-      grid-template-columns: repeat(1, 1fr);
-      justify-content: center;
-      justify-self: center;
-      justify-items: center;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        justify-self: center;
+        justify-items: center;
+        grid-auto-rows: auto;
+        width: 100%;
+    }
+
+    .contacts {
+        width: 100%;
     }
 }
+
+@media only screen and (max-width: 768px) {
+    p {
+        font-size: 18px;
+    }
+
+    .name {
+        font-size: 20px;
+        width: 2px;
+    }
+
+    #about_me {
+        width: 100%;
+    }
+
+    header {
+        font-size: 40px;
+    }
+
+    .contacts {
+        flex-direction: column;
+    }
+
+    .contact {
+        font-size: 25px;
+    }
+
+    .project_description {
+        width: 100%;
+        text-align: center;
+    }
+
+    .project_title {
+        width: 100%;
+        text-align: center;
+    }
+
+    .project_image {
+        width: 100%;
+    }
+}
+
 
 * {
     color: #FFF;
