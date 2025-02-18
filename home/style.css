@@ -134,6 +134,10 @@ a:hover {
     justify-self: center;
 }
 
+.used_skills {
+    float: right;
+}
+
   
 @media only screen and (max-width: 1050px) {
     .projects {
@@ -174,6 +178,10 @@ a:hover {
 
     .contact {
         font-size: 25px;
+    }
+
+    .used_skills {
+        display: none;
     }
 
     .project_description {
